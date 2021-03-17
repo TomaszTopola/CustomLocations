@@ -1,0 +1,19 @@
+name: CustomLocations
+version: 0.1.0.
+author: Tomasz Topola
+main: me.tomasztopola.CustomLocations
+description: Plugin made for saving public and private locations by all players, not just admins/operators.
+
+commands:
+  home:
+    description: Teleports player to home or someones home if nickname inserted.
+    usage: /home <player>
+  sethome:
+    description: Sets player's home on where player sands or on given coordinates.
+    usage: /sethome <x> <y> <z>
+  setlocation:
+    description: Sets custom location chosen by player. If global everyone can access.
+    usage: /setlocation <private/global> <name> <x> <y> <z>
+  goto:
+    description: Telports player to custom location.
+    usage: /goto <private/global> <name>

@@ -1,0 +1,13 @@
+directories:
+  playerData: "/playerData/"
+
+console:
+  pluginEnabled: "CustomLocations successfully enabled."
+  pluginDisabled: "CustomLocations is disabled."
+
+warnings:
+  access:
+    forPlayersOnly: "This command is available only for players."
+  commands:
+    homeNotSet: "You need to use /sethome first."
+    invalidArguments: "Invalid arguments provided."

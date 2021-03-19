@@ -35,7 +35,7 @@ public class SetLocationCommand implements CommandExecutor {
         Location location;
         if(args.length == 2)
             location = player.getLocation();
-        if(args.length == 3 && args[2].toLowerCase().contentEquals("delete"))
+        else if(args.length == 3 && args[2].toLowerCase().contentEquals("delete"))
             location = null;
         else if(args.length == 5){
             location = new Location(

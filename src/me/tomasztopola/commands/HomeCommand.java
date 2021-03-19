@@ -53,7 +53,7 @@ public class HomeCommand implements CommandExecutor {
                     ChatColor.DARK_AQUA + "'s home.");
             Objects.requireNonNull(Bukkit.getPlayer(args[0]))
                     .sendMessage(ChatColor.DARK_PURPLE + player.getDisplayName() +
-                            ChatColor.DARK_AQUA + "teleported to your home");
+                            ChatColor.DARK_AQUA + " teleported to your home");
         }
         return false;
     }

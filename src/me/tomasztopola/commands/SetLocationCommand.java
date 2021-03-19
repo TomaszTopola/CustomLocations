@@ -71,8 +71,8 @@ public class SetLocationCommand implements CommandExecutor {
             return true;
         }
         player.sendMessage(
-                ChatColor.DARK_AQUA +
-                name + " was saved as " +
+                ChatColor.DARK_PURPLE + name
+                    + ChatColor.DARK_AQUA + " was saved as " + ChatColor.DARK_PURPLE +
                     location.getBlockX() + " " +
                     location.getBlockY() + " " +
                     location.getBlockY()

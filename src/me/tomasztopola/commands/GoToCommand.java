@@ -43,7 +43,7 @@ public class GoToCommand implements CommandExecutor {
             player.teleport(Objects.requireNonNull(config.getConfig().getLocation("customLocations." + args[1])));
         }
 
-        player.sendMessage(ChatColor.DARK_AQUA + "You were teleported to " + args[1]);
+        player.sendMessage(ChatColor.DARK_AQUA + "You were teleported to "+ ChatColor.DARK_PURPLE + args[1]);
 
         return true;
     }

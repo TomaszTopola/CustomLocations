@@ -38,7 +38,7 @@ public class SetHomeCommand implements CommandExecutor {
         playerConfig.getConfig().set("home", home);
         playerConfig.saveConfig();
 
-        player.sendMessage(ChatColor.DARK_AQUA + "Home was set to "
+        player.sendMessage(ChatColor.DARK_AQUA + "Home was set to " +  ChatColor.DARK_PURPLE
                 + home.getBlockX() + " "
                 + home.getBlockY() + " "
                 + home.getBlockZ()

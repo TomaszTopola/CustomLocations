@@ -45,7 +45,16 @@ public class HomeCommand implements CommandExecutor {
 
         assert target != null;
         player.teleport(target);
-        player.sendMessage(ChatColor.DARK_AQUA + "You were teleported home");
+        if(args.length==0)
+            player.sendMessage(ChatColor.DARK_AQUA + "You were teleported home");
+        else {
+            player.sendMessage(ChatColor.DARK_AQUA + "You were teleported to " +
+                    ChatColor.DARK_PURPLE + args[0] +
+                    ChatColor.DARK_AQUA + "'s home.");
+            Objects.requireNonNull(Bukkit.getPlayer(args[0]))
+                    .sendMessage(ChatColor.DARK_PURPLE + player.getDisplayName() +
+                            ChatColor.DARK_AQUA + "teleported to your home");
+        }
         return false;
     }
 }

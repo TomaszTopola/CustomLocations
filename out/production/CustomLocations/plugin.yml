@@ -1,5 +1,5 @@
 name: CustomLocations
-version: 1.0.1.
+version: 1.0.3.
 author: Tomasz Topola
 main: me.tomasztopola.CustomLocations
 description: Plugin made for saving public and private locations by all players, not just admins/operators.

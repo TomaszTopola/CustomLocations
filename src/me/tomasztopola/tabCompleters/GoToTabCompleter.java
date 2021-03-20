@@ -36,7 +36,11 @@ public class GoToTabCompleter implements TabCompleter {
 
         if(args.length==1){
             completer.add("private");
-            completer.add("global");
+            if(
+                (cmd.getName().contentEquals("setlocation") && player.hasPermission("setLocation.global"))
+                || cmd.getName().contentEquals("goto")){
+                completer.add("global");
+            }
         }else if(args.length == 2) {
             ConfigurationSection locations;
             if (args[0].equals("private")) {
